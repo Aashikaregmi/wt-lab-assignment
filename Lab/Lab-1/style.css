@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+  
+    
+    
+  }
+
+
+  h1
+  {
+      font-style: italic;
+      text-decoration: underline;
+  }
+
+  .item
+  {
+    font-size: 2rem;
+  }
+
+  
+  a:active,a:hover 
+  {
+    color: white;
+  }
+
+  img 
+  {
+    width: 30rem;
+    height: 20rem;
+    margin: 1rem 50rem 2rem 1rem;}
+  iframe
+  {
+      display: flex;
+      width : 90rem;
+      height : 60rem;
+      margin: 2rem 50rem 2rem 1rem;
+  }
+
+  video
+  {
+      width: 30rem;
+      height: 20rem;
+    margin: 1rem 50rem 2rem 1rem;
+  
+  }
+
+  iframe
+  {
+      display: flex;
+      width : 50rem;
+      height : 40rem;
+      margin: 2rem 50rem 2rem 1rem;
+  }
