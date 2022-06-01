@@ -1,2 +1,2 @@
 ## Screenshot
-![App Screenshot](./pallette.png)
+![App Screenshot](./palette.png)

@@ -18,10 +18,10 @@ section {
 
 p {
 
-    border: solid 1px black;
+    /* border: solid 1px black; */
     height: 30.5px;
     width: 50px;
-    margin: 19.5px 10px 34.5px 0px;
+    margin: 19.5px 10px 37.5px 0px;
     padding: 1px 50px 20px 0px;
     display: flex;
     flex-direction: column;
