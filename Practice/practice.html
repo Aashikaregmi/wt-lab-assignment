@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta is a tag and charset is an attribute-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,html tutorials">
+    <!--This meta tag helps the search engine to find our webpage 
+    whenever the keywords like htm and html tutorials are searched -->
+    <meta name="robots" content="NOINDEX,NOFOLLOW">
+    <!--If this tag is used browser doesnt follow our links and our website 
+    becomes private-->
+
+    <!-- This is how you include external css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- This is how you include external javascript -->
+    <script src="java.js"></script>
+    <title>PRACTICE</title>
+
+    <!-- <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        
+        }
+    </style> -->
+
+
+</head>
+
+<body>
+    <h1>HTML PRACTICE</h1>
+    <!-- Lorem40 for any 40 texts -->
+    <p>Lorem ipsum <strong>strong</strong> <em>emphasized</em> <b>bold</b> <i>italic</i> dolor sit amet consectetur
+        adipisicing elit. Natus quae fugit dignissimos incidunt vero in eos provident repellat veniam deleniti, quo
+        laboriosam impedit et quos, illo quas error magnam sint numquam, id exercitationem eligendi ab? Quae dolores
+        nulla architecto deserunt.</p>
+
+    <!-- br tags and i tags are not reccomended so use em and strong -->
+
+    <!-- This tag includes a horizontal line -->
+    <hr>
+
+    <!-- p*4 this type of tag includes 4 p tags at once -->
+
+    <!-- LINKS embedding using "a" tag -->
+
+    <!-- To open in new tab without exiting our webpage ADD target="_blank" attribute to a tag-->
+    <!-- To enter multiple cursors in multiple lines press option and click on lines -->
+
+    <a href="https://google.com" target="_blank">Google</a> <br>
+    <a href="https://facebook.com" target="_blank">facebook</a> <br>
+    <!-- Internal link : to add internal link first type / then options will be shown-->
+    <a href="/class2.html" target="_blank">Class2</a> <br> <br>
+
+    <!-- IMAGES -->
+
+    <!-- If image is not available or not loading alt text is shown -->
+    <!-- want random image? go to source.unsplash.com -->
+    <!-- We can control height and with with HEIGHT & WIDTH tags BUT its not a nice practice we control it by CSS -->
+
+    <img src="" alt="Image description" height="10" width="20">
+
+    <!-- LIST -->
+
+    <!-- <ol> & <ul> represent ordered and unordered list and <li> tag lists the contets -->
+    <!-- type is the list tags attribute  -->
+    <!-- ul types : disc,square& circle  ol also has types (see refrence) -->
+    <!-- Lists can also be nested -->
+
+    <ul type="circle">
+        <li>first ul</li>
+    </ul>
+
+    <ol>
+        <li type="i">first ol</li>
+    </ol>
+
+    <!-- nested list -->
+
+    <ul type="circle">
+        <li>this is nested list</li>
+        <ul>
+            <li type="disc">first nested list </li>
+            <li type="disc">sec nested list </li>
+        </ul>
+    </ul>
+
+    <ol type="1">
+        <li>Nested orederd list</li>
+        <ol>
+            <li type="i">first ol</li>
+            <li type="i">sec ol</li>
+        </ol>
+    </ol>
+
+    <!-- TABLES -->
+    <h2>HTML TABLES</h2>
+    <!-- <table> tag creates a table <thead> means table head <th> tags specifies the headings of columns <tr>means table row
+        <tbody> tag specifies the body of table below heading and <td> means table data -->
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee id</th>
+                <th>Employee num</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aash</td>
+                <td>CEO</td>
+                <td>0511</td>
+            </tr>
+
+            <tr>
+                <td>sim</td>
+                <td>Manager</td>
+                <td>8999</td>
+            </tr>
+        </tbody>
+    </table> <br> <br>
+
+    <!-- FORMS AND INPUT TAGS -->
+    <fieldset>
+        <legend> Form elements</legend>
+    <h2>FORMS AND INPUT TAGS</h2>
+    <!-- <form> tag used to make form and data entered is stored in backend using action attribute , it tells the system to submit the input data in backend.php and the input data is stored there-->
+
+    <!-- see input types from refrence -->
+
+    <form action="backend.php">
+        <!-- <input> tag is used to enter user input and it can be text ,email, buttons etc etc (see refrence) -->
+        <!-- div tag is used instead of br tag, its a block element and changes lines -->
+
+        <div> <label for="name">Name:</label><input type="text" name="Your name" id="name"> </div> <br>
+        <!-- "name" tyo nam ho jun le timro backend lai chincha-->
+
+        <div> <label for="rollno">Roll number:</label> <input type="number" name="rollno" id="rollno"> </div><br>
+        <!-- e letter can be input 42e20== 43*10^20 -->
+
+        <div>Email: <input type="email" name="Your email"> </div><br>
+
+        <div> Date:<input type="date" name="mydate"></div><br>
+
+        <div>Check if you 18: <input type="checkbox"></div><br>
+
+        <div>Gender: Male<input type="radio" name="mygender"> Female: <input type="radio" name="mygender"> Other: <input
+                type="radio" name="my gender"> </div><br>
+
+        <!-- If "name" attribute is the same we can only check one of the many availible options, we can see this above -->
+
+        <!-- to input long texts textarea tag is used  -->
+        <div>Write about yourself: <br> <textarea name="abtyrself" cols="30" rows="10"></textarea></div>
+
+        <div> <br><label for="car">Car:</label>
+            <select name="mycar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swi" selected>Swift</option>
+            </select>
+        </div>
+
+        <div>
+            Your photo: <input type="image" src="ok.png" width="50" height="10">
+        </div>
+
+        <div>
+            Search anything: <input type="search">
+        </div>
+
+
+
+
+        <div> <input type="submit" value="Submit now" id=""></div><br>
+        <!-- how to submit ? :using submit attribute eg: -->
+
+        <div> <input type="Reset"> </div><br> <!-- submit now jastai reset type ni hunxa josle sab kura reset garxa-->
+
+    </form>
+    </fieldset>
+
+
+
+    <!-- INLINE AND BLOCK ELEMENTS -->
+
+    <h2>INLINE AND BLOCK ELEMENTS </h2>
+    <!-- p tag is block span tag is inline div is block -->
+
+    <!--inline css not reccomended-->
+
+    <p style="border: 2px solid red;">paragraph1</p>
+    <p style="border: 2px solid red;">paragraph2</p>
+    <span style="border: 2px solid blue;">span1</span> <span style="border: 2px solid blue;">span2</span>
+    <a href="#" style="border:2px solid hotpink;">link</a>
+    <em style="border: 2px solid purple;">emphasis</em>
+    <img src="" alt="image" style="border: 2px solid yellowgreen;">
+
+
+    <!-- IDS AND CLASSES -->
+
+    <h2>IDS AND CLASSES IN HTML</h2>
+
+    id is a unique identifier and only one element has one id many elements cannot have same id and it is wromg to do so. It is a CSS thing.
+    class can be shared by many elements which have a common property to be appied for eg "border:2px solid black;"
+
+    <span class="redBG"></span>
+    <span id="mainspan"></span>
+    <div class="regbg black anotherclass"></div> <!--wrote div.redbg.black.anotherclass  -->
+    <div id="myid2"></div> <!--wrote div#myid2 -->
+
+    <!-- Shortcut for class //emmet abbribrreation--> eg: span.redbg.black.anotherclass  
+    <!-- Shortcut for id //emmet abbribrreation--> eg: span#redbg 
+
+    <!-- Emmet --> "." is for class and "#" is for id
+    <!-- Emmet takes div tag as default -->
+
+    <!-- .class1.class2*3 to generate 3 same lines of this code -->
+    <div class="class1 class2"></div>
+    <div class="class1 class2"></div>
+    <div class="class1 class2"></div>
+
+
+    <!-- HTML ENTITIES -->
+    <h2>HTML ENTITIES </h2>
+    <div class="container">
+    <p>Html entities displays the reserved symbols or can be used to display the characters not in keyboard</p>
+    <div class="container">
+        <p>this is &nbsp; &nbsp; paragraph</p>
+    </div>
+    <p>for eg pound is not in keyboard we write "&pound" to display the symbol &pound;</p>
+    <p>paragraph is written like this &lt;p&gt;</p>
+    <p>pound is written like this &pound;</p>
+    <p>Copyright is written like this &copy;</p>
+    <p>Fraction is written like this &frac14;</p>
+    <p>Empty character is written like this &#8203;</p>
+    for space = &nbsp; non breaking space
+    </div>
+    <!-- CHECK REFRENCE FOR OTHER ENTITIES -->
+
+    <!-- SEMANTIC TAGS -->
+    
+    <h2>SEMANTIC ELEMENTS</h2>
+    <div class="container">
+        <!-- Sabda ko meaning lai semantics bhaninxa -->
+        <!-- See mdn for all  semantic elements list -->
+
+        <details> 
+            <summary>
+                This is details.
+            </summary>
+            If its out of summary then its not shown directly.
+        </details>
+
+        <!-- header footer haruko kura direct CSS ma xa -->
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

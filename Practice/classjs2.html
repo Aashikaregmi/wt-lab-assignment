@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //variable declaration types
+        var name; //dont use var
+        let address;
+
+        name="Arjun"; //initialization
+        address="Pokhara";
+        var name = "Rohit";   ///VARIABLE HOISTING (Jvascript is interpreter type) 
+
+        console.log(name); //name
+        console.log("address") //string literal
+        console.log(address);
+        console.log('name')//name nai auxa
+
+        // let doesnt do variable hoisting
+        //var ma jati choti ni euta variable lai 'redeclare' garna payo but let ma paudaina
+        //var causes problems to developers
+
+        test();
+
+        function test() {
+            console.log("testing");
+            
+        }
+
+        var x = 5; // initialize x
+        console.log(x+y);
+        var y = 7; //initialize y
+
+        const PI = 3.14; 
+        PI=4; // const ma initilize garera pachi declare garna paidaina.
+        console.log(PI);
+
+
+        // PRIMITIVE DATATYPE
+        // 1 Number
+        // 2 Big int 
+        // 3 String
+        // 4 Boolean
+        // 5 symbol 
+        // 6 undefined
+        // 7 null 
+
+        // DERIVED DATATYPE
+        // 1 Object (array string Number all are objects)
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

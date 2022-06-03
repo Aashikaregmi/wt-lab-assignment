@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="practice.css"> -->
+</head>
+<!-- Css ko precedence is inline css then  on the basis of order precidence external or internal css   -->
+<style>
+
+    /* element selector */
+    p{
+        /* color: palevioletred; p=selector color=property & palevoiletred=value */
+
+    }
+
+    section,footer{
+        background-color: blue;
+        border: 1px solid black;
+    }
+
+    /* id selector */
+    #id{
+        background-color: aqua; /* p=selector color=property & palevoiletred=value */
+
+        /* id is a unique element one element can have only 1 id and that id cant be used for another element */
+
+    /* class selector */
+
+    }
+    .p{
+        color: rgb(130, 9, 49); /* p=selector color=property & palevoiletred=value */
+        background-color: bisque;
+
+        /* there can be multiple elements using a same class */
+
+    }
+    
+    
+    
+</style>
+<!-- <link rel="stylesheet" href="practice.css"> -->
+
+
+
+<body>
+    <H1>CSS</H1>
+    <p>Hiiii</p>
+
+    <!-- SELECTORS IN CSS -->
+    <h2>Selectors</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, deserunt?</p>
+    <div>
+        <p>paragraph inside div</p>
+
+        <p class="p">Class</p>
+        <p id="id">ID</p>
+    </div>
+
+    <section>
+        <p>lmao</p>
+    </section>
+
+    <footer>
+        <p>hi</p>
+    </footer>
+
+
+</body>
+</html>
