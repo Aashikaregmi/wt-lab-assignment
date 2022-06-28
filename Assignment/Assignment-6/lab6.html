@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,55 +8,56 @@
     <title>Drag&Drop</title>
 </head>
 <style>
-    * {
+    *{
         font-family: sans-serif;
         font-weight: 200px;
         font-size: 20px;
     }
-
-    .box {
+    
+    .box{
 
         width: 200px;
         height: 60px;
         /* margin: 10px; */
         background-color: palevioletred;
-        /* border: 1px solid blueviolet; */
-        /* text-align: center; */
-        /* border-radius: 20px; */
-        /* box-shadow: 0px 2px 10px rgba(92, 92, 92, 0.7); */
+        border: 1px solid blueviolet;
+        text-align: center;
+       
+        box-shadow: 0px 2px 10px rgba(92, 92, 92, 0.7);
     }
 
-    div {
+    div{
         background-color: antiquewhite;
         border: 1px solid violet;
         align-items: center;
         box-shadow: violet;
     }
-
-    #box1 {
+    #box1{
         position: absolute;
     }
+    
+    
+
+   
 </style>
 
 <body onload="move('box1')">
-
-    <div class="box" id="box1">
-        
-    </div>
-
+   
+    <div class="box" id="box1"></div>
+   
 
     <script>
         let dragValue;
         function move(id) {
             let element1 = document.getElementById("box1");
-
+            
 
             element1.style.position = "absolute";
             element1.onmousedown = function () {
                 dragValue = element1;
             }
-
-
+            
+        
         }
         document.onmouseup = function (e) {
             dragValue = null;
@@ -69,7 +70,7 @@
             dragValue.style.left = x + "px";
             dragValue.style.top = y + "px";
             dragValue.style.height = y + "px";
-            dragValue.style.width = x + "px";
+            dragValue.style.width= x + "px";
         }
     </script>
 
